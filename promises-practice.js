@@ -50,7 +50,7 @@ console.log('program in progress');
 
 // question : 2
 //working with promise chaining
-
+// helps to understand how promise chaining works
 const myPromise = new Promise((resolve , reject) =>
 {
     setTimeout(() => {
