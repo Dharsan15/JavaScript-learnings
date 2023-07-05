@@ -53,3 +53,22 @@ console.log(koala);
 
 // question : 3
 
+const superhero = 
+{
+    name : 'Robert downey jr.',
+    alias : 'Iron man',
+    universe : 'MCU',
+    happy : false,
+    enemies : ['thanos' , 'loki'],
+    bestmovie : {title : 'Iron man 1' , rating : 8}
+}
+
+const superheroCopy =
+{
+    ...superhero,
+    enemies : [...superhero.enemies , 'winter soldier'],
+    bestmovie : {...superhero.bestmovie , year : 2008}
+}
+
+console.log(superhero);
+console.log(superheroCopy);
