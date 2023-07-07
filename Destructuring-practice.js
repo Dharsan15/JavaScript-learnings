@@ -23,5 +23,19 @@ const snacks = {
  console.log(candy , fruit);
  
  
- 
+ // question : 2
+
+const store = new Map();
+
+store.set('cup' , 46);
+store.set('candles' , 121);
+store.set('vases' , 15);
+
+
+// using array destructuring syntax getting both key and values of the map and printing it
+
+for(const [key , val] of store)
+{
+    console.log(`${key} => ${val}`);
+}
  
