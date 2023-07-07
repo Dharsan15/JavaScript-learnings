@@ -39,3 +39,26 @@ for(const [key , val] of store)
     console.log(`${key} => ${val}`);
 }
  
+
+// question : 3
+
+// working with destructuring  parameters inside func 
+
+function myCalc(obj)
+{
+   const {x , y , z} = obj;
+
+   //can be also done in this method but it is not looks good nahh ;)
+  {
+  //   let x = obj.x;
+   // let y = obj.y;
+   // let z = obj.z;
+  } 
+
+   return 5 * x - 2 * y - z;
+}
+
+const obj = {x : 100, y : 100 , z : 100};
+
+
+console.log(myCalc(obj));
