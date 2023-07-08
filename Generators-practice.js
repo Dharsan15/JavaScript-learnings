@@ -33,3 +33,19 @@ while (i <= 10) {
   console.log(num.next().value);
   i++;
 }
+
+// question : 2
+
+// getting the required amount of random numbers within the given range
+
+const randomNumber = function* (amount, min, max) {
+  for (let i = 0; i < amount; i++) {
+    yield Math.floor(Math.random() * (max - min + 1) + min);
+  }
+};
+
+const getrandom = randomNumber(5, 5, 10);
+
+for (const val of getrandom) {
+  console.log(val);
+}
