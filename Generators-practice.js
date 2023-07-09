@@ -52,6 +52,9 @@ for (const val of getrandom) {
 
 //question : 3
 
+// generating a random number between 1 - 10 and taking a grocery item from the array and 
+// yielding it 5 times 
+
 const getrandomNumer = function* () {
   let i = 0;
 
@@ -61,26 +64,25 @@ const getrandomNumer = function* () {
   }
 };
 
-const grocerylist = function*() {
-    let i = Math.floor(Math.random() * 5);
-    const grocery = ['Avacado' , 'cookie' , 'milk' , 'soup' , 'soda']
-    yield grocery.splice(i , 1);
-    
+const grocerylist = function* () {
+  const grocery = ["Avacado", "cookie", "milk", "soup", "soda"];
+  let n = grocery.length;
+  for (let i = 0; i < n; i++) {
+    let index = Math.floor(Math.random() * grocery.length);
+    let item = grocery.splice(index, 1)[0];
+    yield item;
+  }
+};
+
+const randomNumber = getrandomNumer();
+
+const getgrocery = grocerylist();
+
+for (let i = 0; i < 5; i++) {
+  const num = randomNumber.next().value;
+  const grocery = getgrocery.next().value;
+  console.log(num, grocery);
 }
 
-const Obj = getrandomNumer();
-
-const obj2 = grocerylist();
-
-
-
-for (const val of Obj) {
-  console.log(val);
-}
-
-for(const val of obj2)
-{
-    console.log(val);
-}
 
 
