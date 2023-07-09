@@ -49,3 +49,6 @@ const getrandom = randomNumber(5, 5, 10);
 for (const val of getrandom) {
   console.log(val);
 }
+
+//question : 3
+
