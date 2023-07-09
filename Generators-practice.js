@@ -52,3 +52,35 @@ for (const val of getrandom) {
 
 //question : 3
 
+const getrandomNumer = function* () {
+  let i = 0;
+
+  while (i < 5) {
+    yield Math.floor(Math.random() * (11 - 1 + 1) + 1);
+    i++;
+  }
+};
+
+const grocerylist = function*() {
+    let i = Math.floor(Math.random() * 5);
+    const grocery = ['Avacado' , 'cookie' , 'milk' , 'soup' , 'soda']
+    yield grocery.splice(i , 1);
+    
+}
+
+const Obj = getrandomNumer();
+
+const obj2 = grocerylist();
+
+
+
+for (const val of Obj) {
+  console.log(val);
+}
+
+for(const val of obj2)
+{
+    console.log(val);
+}
+
+
