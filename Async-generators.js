@@ -23,3 +23,7 @@ const asyncgenerator = async function* () {
   asyncfun();
   
 
+  // question : 1
+
+  
+
