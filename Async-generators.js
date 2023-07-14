@@ -91,3 +91,30 @@ async function funnn() {
 }
 
 funnn();
+
+
+//question : 3
+
+// async generator for printing the time taken for it to resolve and each time multiply it by 2
+
+const asyncGenfun = async function* (time) {
+  while (1) {
+    yield new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(time);
+      }, time);
+    });
+
+    time = time * 2;
+  }
+};
+
+const asycObj = asyncGenfun(100);
+
+async function fun() {
+  for await (const promise of asycObj) {
+    console.log(promise);
+  }
+}
+
+fun();
