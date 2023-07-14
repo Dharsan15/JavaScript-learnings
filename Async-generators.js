@@ -60,3 +60,34 @@ const asyncgenerator = async function* () {
   
 
 //question 2:
+
+// a generator function which takes a string and prints * if a letter is a vowel
+// and prints the same letter in UC if it is a consonant
+
+
+
+const asynGenFun = async function* (string) {
+  for (const char of string) {
+    let a = char.toLowerCase();
+
+    yield new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (a == "a" || a == "e" || a == "i" || a == "o" || a == "u") {
+          resolve("*");
+        } else {
+          resolve(a.toUpperCase());
+        }
+      }, 100);
+    });
+  }
+};
+
+const asyncobj = asynGenFun("monkey is the coolest animal");
+
+async function funnn() {
+  for await (const promise of asyncobj) {
+    console.log(promise);
+  }
+}
+
+funnn();
