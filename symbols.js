@@ -8,3 +8,4 @@ console.log(typeof gorilla);
 console.log();
 
 // question : 1
+// 
