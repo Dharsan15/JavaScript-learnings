@@ -31,5 +31,38 @@ const book = {
     console.log(val);
   }
   
+//question : 2
 
+// This time creating our own async generator to our object
+
+
+const book = {
+    name: "1984",
+    author: "George orwell",
+    year: 1948,
+    rating: 4.5,
+    genre: "science friction",
+    movie: true,
+  };
+  
+  book[Symbol.asyncIterator] = async function* () {
+    const entries = Object.entries(book);
+  
+    for (const entry of entries) {
+      yield new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(entry);
+        }, 1000);
+      });
+    }
+  };
+  
+  async function fun() {
+    for await (const [key, val] of book) {
+      console.log(`${key} => ${val}`);
+    }
+  }
+  
+  fun();
+  
 
