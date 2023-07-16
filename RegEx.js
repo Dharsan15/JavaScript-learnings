@@ -17,7 +17,7 @@ console.log(match);
 
 const email = 'monkey@tress.com';
 
-const emailPattern = /.com$/;
+const emailPattern = /\.com$/;
 
 const match = email.match(emailPattern)
 
