@@ -22,3 +22,4 @@ const emailPattern = /\.com$/;
 const match = email.match(emailPattern)
 
 console.log(match);
+
