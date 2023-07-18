@@ -6,5 +6,5 @@ const square = (num) => {
     return num * num;
 }
 
-export default greeting
-export { square }
+export default greeting;
+export { square };
