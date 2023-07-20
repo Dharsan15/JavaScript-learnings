@@ -14,6 +14,8 @@ function fetchpokemon() {
 console.log("program started...");
 
 // async function which a-wait until fetchpokemon function is completed
+
+
 const asyncfun = async () => {
   const val = await fetchpokemon(); // the lines after this inside the func does not execute until the promise is resolved or rejected
   console.log(val);
