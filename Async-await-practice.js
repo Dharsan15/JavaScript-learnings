@@ -1,6 +1,7 @@
 // question : 0
 
 // this function returns a promise which resolves in 2 secs
+//that's the fetch
 
 function fetchpokemon() {
   return new Promise((resolve, reject) => {
