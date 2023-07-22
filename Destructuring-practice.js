@@ -9,6 +9,7 @@ console.log(an2);
 
 //question : 1
 //object destructuring syntax
+// this is how we can destruct an array
 
 const snacks = {
   chips: { name: "Pringles", salty: true },
