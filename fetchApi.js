@@ -11,6 +11,7 @@
 
 //question : 1
 
+// this url just return a json 
 
 fetch("https:/jsonplaceholder.typicode.com/posts/1")
 .then((res) =>
@@ -24,3 +25,5 @@ fetch("https:/jsonplaceholder.typicode.com/posts/1")
 .then((text) => {
     console.log(text);
 })
+
+
