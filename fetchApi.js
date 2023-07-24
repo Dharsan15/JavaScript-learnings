@@ -29,3 +29,10 @@ fetch("https:/jsonplaceholder.typicode.com/posts/1")
 //question : 2
 
 
+fetch("https:/pokeapi.co./api/v2/pokemon/pikachu")
+.then((response) => {
+    return response.json();
+})
+.then((pokeimg) => {
+    console.log(pokeimg.sprites.other["official-artwork"].front_default);
+})
