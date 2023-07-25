@@ -28,6 +28,8 @@ fetch("https:/jsonplaceholder.typicode.com/posts/1")
 
 //question : 2
 
+// print the url of the image
+
 
 fetch("https:/pokeapi.co./api/v2/pokemon/pikachu")
 .then((response) => {
