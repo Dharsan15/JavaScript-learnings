@@ -38,3 +38,19 @@ fetch("https:/pokeapi.co./api/v2/pokemon/pikachu")
 })
 
 // question : 3
+
+import fs from 'fs/promises'
+
+fetch("https://w.wallhaven.cc/full/6o/wallhaven-6oxgp6.jpg")
+.then((img) => {
+    return img.arrayBuffer();
+})
+.then(async (data) => {
+   await fs.writeFile('wallpaper.png' , Buffer.from(data) );
+    
+})
+
+
+
+
+
