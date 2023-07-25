@@ -39,6 +39,8 @@ fetch("https:/pokeapi.co./api/v2/pokemon/pikachu")
 
 // question : 3
 
+// getting image from the internet and save it in the current folder
+
 import fs from 'fs/promises'
 
 fetch("https://w.wallhaven.cc/full/6o/wallhaven-6oxgp6.jpg")
