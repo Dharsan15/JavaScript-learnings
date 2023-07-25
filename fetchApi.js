@@ -36,3 +36,5 @@ fetch("https:/pokeapi.co./api/v2/pokemon/pikachu")
 .then((pokeimg) => {
     console.log(pokeimg.sprites.other["official-artwork"].front_default);
 })
+
+// question : 3
