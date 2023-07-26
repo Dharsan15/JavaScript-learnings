@@ -12,7 +12,7 @@ console.log(html)
 
 // this url just return a json 
 // we can use .json method to get a json otherwise 
-//it returns a string
+// it returns a string
 
 fetch("https:/jsonplaceholder.typicode.com/posts/1")
 .then((res) =>
