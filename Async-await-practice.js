@@ -1,5 +1,7 @@
 // question : 0
 
+// Instead of .then we can use await inside a async function
+
 // this function returns a promise which resolves in 2 secs
 //that's the fetch
 
