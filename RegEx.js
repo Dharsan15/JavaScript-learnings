@@ -1,5 +1,7 @@
 //question : 0
 
+// regular expressions are used to used some patter matching 
+
 const str = 'What is this? an ant'
 
 const pattern = /ant/i;
