@@ -2,6 +2,8 @@
 
 // regular expressions are used to used some patter matching 
 
+// It will be useful when we want to match any phone no. or email etc.. in our project
+
 const str = 'What is this? an ant'
 
 const pattern = /ant/i;
