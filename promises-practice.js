@@ -24,6 +24,9 @@ myPromise.then((value) =>
 
 // question :  1
 
+// promise object which will resolve in 3sec and reject 2sec 
+// which will execute first ? 
+
 const myPromise = new Promise((resolve , reject) => 
 {
     setTimeout(() => {
