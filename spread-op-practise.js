@@ -2,6 +2,7 @@
 
 // this is a modern javascript syntax Es6 features
 
+// we are here copying an array and putting in another array
 
 const arr = [1,2,3,4,5]
 
