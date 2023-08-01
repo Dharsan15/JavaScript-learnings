@@ -1,5 +1,8 @@
 //question : 0
 
+// this is a modern javascript syntax Es6 features
+
+
 const arr = [1,2,3,4,5]
 
 const arrCopy = [...arr , 6,7];
