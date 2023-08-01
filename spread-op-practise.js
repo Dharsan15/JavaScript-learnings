@@ -32,7 +32,7 @@ console.log(arrCopy);
 
 // question : 2
 
-// getting deeper understanding of shollow copy 
+// getting deeper understanding of shallow copy 
 // it only works with non primitve data types 
 // because arrays , objs are passed as references and other are passed as copies
 
