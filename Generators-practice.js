@@ -1,3 +1,9 @@
+// Generators 
+
+// It is a function which yield certain values when it is called 
+
+
+
 //question : 0
 
 const counTo10 = function* () {
