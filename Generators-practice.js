@@ -1,7 +1,7 @@
 // Generators 
 
 // It is a function which yield certain values when it is called 
-
+// It can have multiple yield values 
 
 
 //question : 0
