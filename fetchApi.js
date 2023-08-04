@@ -1,8 +1,8 @@
 // question : 0
 
 // fetch is an api which is used to communicate with a server
-//it not a part of actual javascript 
-
+// it not a part of actual javascript 
+// it will return a promise 
 
 
 // request a webpage and print the page source
