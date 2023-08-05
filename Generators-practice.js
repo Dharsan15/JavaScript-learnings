@@ -6,6 +6,8 @@
 
 //question : 0
 
+// Here we are yielding a value 
+
 const counTo10 = function* () {
   let i = 0;
 
@@ -23,7 +25,8 @@ for (const val of generatorobj) {
 
 // question : 1
 
-// printing random number everytime when it is called...
+// yielding infinite number of random number when it is called...
+// This will not stop  yielding values until we are stopping it manually
 
 const randomNumber = function* () {
   while (true) {
