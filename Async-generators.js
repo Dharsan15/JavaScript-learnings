@@ -1,4 +1,11 @@
+//ASYNC GENERATORS
+
+//async generators will yield promises when it is called
+
+
 // question : 0
+
+
 // async generator to return a random number infinitely
 
 const asyncgenerator = async function* () {
