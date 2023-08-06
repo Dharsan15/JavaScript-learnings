@@ -4,8 +4,6 @@
 
 
 // question : 0
-
-
 // async generator to return a random number infinitely
 
 const asyncgenerator = async function* () {
