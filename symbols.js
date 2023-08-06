@@ -1,6 +1,8 @@
 // question : 0
 
-// a symbol is inside encapsulated inside an object 
+// a symbol is  encapsulated inside an object 
+
+
 // it cannot be viewed just like any other keys 
 
 let baboon = Symbol("Monkey");
