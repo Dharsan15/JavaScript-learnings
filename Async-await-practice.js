@@ -2,6 +2,7 @@
 
 // Instead of .then we can use await inside a async function
 
+
 // this function returns a promise which resolves in 2 secs
 //that's the fetch
 
@@ -19,7 +20,7 @@ console.log("program started...");
 
 
 const asyncfun = async () => {
-  const val = await fetchpokemon(); // the lines after this inside the func does not execute until the promise is resolved or rejected
+  const val = await fetchpokemon(); // the lines after this inside the func does not execute until the promise is resolved or rejected  
   console.log(val);
   console.log("program completed!");
 };
