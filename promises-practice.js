@@ -77,8 +77,8 @@ myPromise.then((value) => {
         },2000)
     })
 
-    we can also simple return without a promise syntax because
-    anything returned in a promise is treated as a promise
+  //  we can also simple return without a promise syntax because
+  //  anything returned in a promise is treated as a promise
    
 })
 
