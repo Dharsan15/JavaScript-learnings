@@ -1,16 +1,20 @@
 // calling the same function inside itself is called recursion 
 
-function add(a)
-{
-    if(a == 5)
-    {
-        return a;
-    }
-    
-    add(a + 1);
+const arr = [1,2,3,4,5];
 
-    console.log(a);
+function sum(array , index)
+{
+   if(index == array.length - 1)
+   {
+       return array[index];
+   }
+
+    return array[index] + sum(array , index + 1);
 
 }
 
-add(0);
+const result = sum(arr, 0);
+
+console.log(result);
+
+
