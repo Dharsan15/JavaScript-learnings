@@ -1,4 +1,4 @@
 # JavaScript-learnings
-    As i was learning JavaScript , i will update my learnings in this repository , i will share topic wise exercises which i did during my learning journey...
+    `In this repository i will update the set of topic wise challenges that i have practiced during my journey of learning ${JAVASCRIPT}`
     
     HAPPY_CODING
