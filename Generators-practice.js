@@ -47,6 +47,7 @@ while (i <= 10) {
 
 // getting the required amount of random numbers within the given range
 
+
 const randomNumber = function* (amount, min, max) {
   for (let i = 0; i < amount; i++) {
     yield Math.floor(Math.random() * (max - min + 1) + min);
