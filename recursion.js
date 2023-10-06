@@ -1,20 +1,23 @@
-// calling the same function inside itself is called recursion 
+// calling the same function inside itself is called recursion
 
-const arr = [1,2,3,4,5];
+// question : 1
 
-function sum(array , index)
-{
-   if(index == array.length - 1)
-   {
-       return array[index];
-   }
+// printing fizz buzz using recursion
 
-    return array[index] + sum(array , index + 1);
+function fizzbuzz(srt, end) {
+  if (srt > end) {
+    return;
+  }
 
+  if (srt % 3 == 0 && srt % 5 == 0) {
+    console.log("FIZZ-BUZZ " + srt);
+  } else if (srt % 3 == 0) {
+    console.log("FIZZ " + srt);
+  } else if (srt % 5 == 0) {
+    console.log("BUZZ " + srt);
+  }
+
+  fizzbuzz(++srt, end);
 }
 
-const result = sum(arr, 0);
-
-console.log(result);
-
-
+fizzbuzz(1, 15);
