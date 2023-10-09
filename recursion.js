@@ -21,3 +21,18 @@ function fizzbuzz(srt, end) {
 }
 
 fizzbuzz(1, 15);
+
+
+// find a string is palindrome or not by using recursion 
+
+function palindrome(str)
+{
+   if(str.length == 0) return true;
+   if(str.length == 1) return true;
+   if(str.length == 2) return (str[0] == str[1]);
+   if(str[0] != str[str.length - 1]) return false;
+
+   return palindrome(str.substring(1 , str.length -1))
+}
+
+console.log(palindrome("mom"));
