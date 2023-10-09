@@ -36,3 +36,7 @@ function palindrome(str)
 }
 
 console.log(palindrome("mom"));
+
+
+// flatten an array 
+
