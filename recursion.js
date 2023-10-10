@@ -22,21 +22,35 @@ function fizzbuzz(srt, end) {
 
 fizzbuzz(1, 15);
 
+// find a string is palindrome or not by using recursion
 
-// find a string is palindrome or not by using recursion 
+function palindrome(str) {
+  if (str.length == 0) return true;
+  if (str.length == 1) return true;
+  if (str.length == 2) return str[0] == str[1];
+  if (str[0] != str[str.length - 1]) return false;
 
-function palindrome(str)
-{
-   if(str.length == 0) return true;
-   if(str.length == 1) return true;
-   if(str.length == 2) return (str[0] == str[1]);
-   if(str[0] != str[str.length - 1]) return false;
-
-   return palindrome(str.substring(1 , str.length -1))
+  return palindrome(str.substring(1, str.length - 1));
 }
 
 console.log(palindrome("mom"));
 
+// flatten an array with nesting
 
-// flatten an array 
+function flatten(arr) {
+  const result = [];
 
+  for (const elements of arr) {
+    if (arr.isArray()) {
+      const flattened = flatten(arr);
+
+      for (const innerelement of flattened) {
+        result.push(innerelement);
+      }
+    } else {
+      result.push(elements);
+    }
+  }
+
+  return result;
+}
