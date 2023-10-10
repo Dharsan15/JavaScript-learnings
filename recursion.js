@@ -1,7 +1,6 @@
 // calling the same function inside itself is called recursion
 
 // question : 1
-
 // printing fizz buzz using recursion
 
 function fizzbuzz(srt, end) {
@@ -22,6 +21,7 @@ function fizzbuzz(srt, end) {
 
 fizzbuzz(1, 15);
 
+// Question : 2
 // find a string is palindrome or not by using recursion
 
 function palindrome(str) {
@@ -35,6 +35,7 @@ function palindrome(str) {
 
 console.log(palindrome("mom"));
 
+// Question : 3
 // flatten an array with nesting
 
 function flatten(arr) {
@@ -54,3 +55,9 @@ function flatten(arr) {
 
   return result;
 }
+
+
+// Question : 3
+
+// flatten an object 
+
