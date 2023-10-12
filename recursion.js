@@ -60,4 +60,5 @@ function flatten(arr) {
 // Question : 3
 
 // flatten an object 
+// convert nested objects to a single object
 
