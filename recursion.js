@@ -1,5 +1,6 @@
 // calling the same function inside itself is called recursion
 
+
 // question : 1
 // printing fizz buzz using recursion
 
@@ -56,9 +57,6 @@ function flatten(arr) {
   return result;
 }
 
-
 // Question : 3
-// flatten an object 
+// flatten an object
 // convert nested objects to a single object
-
-
