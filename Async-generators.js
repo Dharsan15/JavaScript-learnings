@@ -2,74 +2,69 @@
 
 //async generators will yield promises when it is called
 
-
 // question : 0
 // async generator to return a random number infinitely
 
 const asyncgenerator = async function* () {
-    while (1) {
+  while (1) {
+    yield new Promise((resolve, reject) => {
+      setTimeout(() => {
+        let number = Math.floor(Math.random() * 9);
+        resolve(number);
+      }, 1000);
+    });
+  }
+};
+
+const asynGenObj = asyncgenerator();
+
+async function asyncfun() {
+  for await (const promise of asynGenObj) {
+    console.log(promise);
+  }
+}
+
+asyncfun();
+
+// question : 1
+
+// generator function which return either of two promises of which one resolve in .5 sec
+// and 3 sec and it should run infinetly
+
+const asyncGenfun = async function* () {
+  while (1) {
+    const val = Math.floor(Math.random() * 2);
+
+    if (val == 0) {
       yield new Promise((resolve, reject) => {
         setTimeout(() => {
-          let number = Math.floor(Math.random() * 9);
-          resolve(number);
-        }, 1000);
+          resolve("Fast");
+        }, 500);
+      });
+    } else {
+      yield new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("slow");
+        }, 3000);
       });
     }
-  };
-  
-  const asynGenObj = asyncgenerator();
-  
-  async function asyncfun() {
-    for await (const promise of asynGenObj) {
-      console.log(promise);
-    }
   }
-  
-  asyncfun();
-  
+};
 
-  // question : 1
+const asyncGen = asyncGenfun();
 
-  // generator function which return either of two promises of which one resolve in .5 sec
-  // and 3 sec and it should run infinetly
-
-  const asyncGenfun = async function* () {
-    while (1) {
-      const val = Math.floor(Math.random() * 2);
-  
-      if (val == 0) {
-        yield new Promise((resolve, reject) => {
-          setTimeout(() => {
-            resolve("Fast");
-          }, 500);
-        });
-      } else {
-        yield new Promise((resolve, reject) => {
-          setTimeout(() => {
-            resolve("slow");
-          }, 3000);
-        });
-      }
-    }
-  };
-  
-  const asyncGen = asyncGenfun();
-  
-  async function asyncfun() {
-    for await (const promise of asyncGen) {
-      console.log(promise);
-    }
+async function asyncfun() {
+  for await (const promise of asyncGen) {
+    console.log(promise);
   }
-  
-  asyncfun();
-  
+}
+
+asyncfun();
 
 //question 2:
 
 // a generator function which takes a string and prints * if a letter is a vowel
 // and prints the same letter in UC if it is a consonant
-
-
 
 const asynGenFun = async function* (string) {
   for (const char of string) {
@@ -96,7 +91,6 @@ async function funnn() {
 }
 
 funnn();
-
 
 //question : 3
 
