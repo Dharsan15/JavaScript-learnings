@@ -1,7 +1,5 @@
 console.log("Module A");
 
-const a= 'A';
+const a = "A";
 
-export {
-    a
-}
+export { a };
