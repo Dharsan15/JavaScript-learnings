@@ -1,7 +1,7 @@
-import {a} from './moduleA.js'
+import { a } from "./moduleA.js";
 
-console.log('Module B');
+console.log("Module B");
 
-const b = 'B';
+const b = "B";
 
 export { b };
